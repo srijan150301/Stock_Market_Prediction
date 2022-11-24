@@ -74,7 +74,6 @@ def app():
  plt.plot(ma100,'r')
  plt.plot(ma200,'g')
  plt.plot(data.Close,'b')
- st.write(data.Close.tail(1)) 
  st.pyplot(fig)
 
  data_training=pd.DataFrame(data['Close'][0:int(len(data)*0.70)]) #we take only 70% values of close column  
@@ -138,7 +137,7 @@ def app():
  plt.ylabel('Price')
  plt.legend()
  st.pyplot(fig2)
- st.write(y_predicted)
+
  
 
 def load_data(ticker):
