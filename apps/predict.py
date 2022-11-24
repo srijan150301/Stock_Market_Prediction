@@ -32,9 +32,6 @@ def app():
  #data=data.reset_index()
  #data=data.drop(['Adj Close'], axis=1)
  st.write(data.tail())
- if st.button('To see live stock prices click here'):
-  url = 'https://finance.yahoo.com/'
-  webbrowser.open_new_tab(url)
  st.write("---")
  
  fig = go.Figure()
